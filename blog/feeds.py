@@ -4,7 +4,7 @@ from .models import Article
 class AllArticlesRssFeed(Feed):
     title = 'Django博客简易实现'
     link = '/'
-    description = 'Django农科简易实现测试文章'
+    description = 'Django博客简易实现测试文章'
 
     def items(self):
         return Article.objects.all()
